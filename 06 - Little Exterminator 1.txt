@@ -1,0 +1,15 @@
+-- 7 Billion Humans (2059) --
+-- 6: Little Exterminator 1 --
+-- 9c / 3s --
+
+step s
+step sw
+step sw
+step se
+step e
+step se
+step s
+step s
+pickup c
+
+
