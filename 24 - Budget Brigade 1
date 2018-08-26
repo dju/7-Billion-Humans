@@ -1,0 +1,52 @@
+-- 7 Billion Humans (2059) --
+-- 24: Budget Brigade 1 --
+-- Nixxx ： 6/7 120/50
+
+comment 0
+a:
+if s == printer:
+	takefrom s
+endif
+giveto e
+if s == shredder and
+ myitem == datacube:
+	giveto s
+endif
+jump a
+
+
+-- 7 Billion Humans (2059) --
+-- 24: Budget Brigade 1 --
+-- Nixxx : 15/7 50/50
+
+comment 4
+comment 3
+comment 2
+if s == printer:
+	a:
+	takefrom s
+	giveto e
+	jump a
+endif
+comment 1
+b:
+c:
+if s == shredder:
+	if myitem == datacube:
+		giveto s
+		jump b
+	else:
+		jump c
+	endif
+endif
+comment 0
+d:
+if myitem == nothing:
+	takefrom w
+else:
+	giveto e
+endif
+jump d
+
+
+
