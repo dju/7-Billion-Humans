@@ -1,0 +1,13 @@
+-- 7 Billion Humans (2059) --
+-- 18: Uniquely Disposed --
+-- Nixxx : 7/7 ,12/12 --
+
+pickup w
+step sw
+a:
+if s == shredder:
+	giveto s
+	end
+endif
+step se
+jump a
