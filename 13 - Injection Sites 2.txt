@@ -1,0 +1,35 @@
+-- best known solutions 20180826 --
+-- size 9 / speed 5
+-- optional challenges
+-- size 10 / speed 55
+
+-- 7 Billion Humans (2059) --
+-- 13: Injection Sites 2 --
+-- 20c / 8s --
+
+step s
+pickup c
+step se
+step se
+if c == nothing:
+	drop
+endif
+step sw
+step sw
+if c == nothing:
+	drop
+endif
+step se
+step se
+step se
+step se
+if c == nothing:
+	drop
+endif
+step ne
+step n
+if c == nothing:
+	drop
+endif
+
+
