@@ -1,0 +1,16 @@
+-- 7 Billion Humans (2059) --
+-- 22: Number Royale --
+-- Nixxx : 6/6 24/26
+
+pickup s
+a:
+if myitem < e or
+ myitem < w:
+	b:
+	step s
+	jump b
+endif
+step e
+jump a
+
+
