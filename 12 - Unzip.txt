@@ -1,0 +1,89 @@
+-- best known solutions 20180826 --
+-- size 8 / speed 4
+-- optional challenges
+-- size 8 / speed 7
+
+-- 7 Billion Humans (2059) --
+-- 12: Unzip --
+-- 13c / 29s --
+
+pickup c
+if w == wall:
+	step n
+	drop
+endif
+a:
+if nw == worker:
+	pickup c
+	step s
+	drop
+endif
+if sw == worker:
+	pickup c
+	step n
+	drop
+endif
+jump a
+
+
+-- 7 Billion Humans (2059) --
+-- 12: Unzip --
+-- 14 / 14s --
+
+pickup c
+step n
+a:
+if w != worker:
+	jump b
+else:
+	step s
+	step s
+	if w != worker:
+		jump c
+	else:
+		step n
+		step n
+		jump a
+	endif
+endif
+c:
+b:
+drop
+
+
+-- 7 Billion Humans (2059) --
+-- 12: Unzip --
+-- 8c / 30s --
+
+a:
+if sw == worker or
+ nw == wall:
+	pickup c
+	step n
+endif
+if nw == worker:
+	pickup c
+	step s
+endif
+drop
+jump a
+
+
+-- 7 Billion Humans (2059) --
+-- 12: Unzip --
+-- 9c/ 7s --
+
+pickup c
+a:
+if w != worker:
+	step n
+else:
+	if nw == worker:
+		step s
+	else:
+		jump a
+	endif
+endif
+drop
+
+
