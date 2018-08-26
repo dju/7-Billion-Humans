@@ -1,0 +1,49 @@
+-- 7 Billion Humans (2059) --
+-- 9: Dynamic Angles --
+-- 9c / 10s --
+
+a:
+if nw == datacube:
+	drop
+	jump b
+else:
+	if s == datacube:
+		pickup s
+	else:
+		step s
+	endif
+	jump a
+endif
+b:
+
+
+-- 7 Billion Humans (2059) --
+-- 9: Dynamic Angles --
+-- 5c / 6s --
+
+pickup s
+a:
+if nw == datacube:
+	drop
+endif
+step s
+jump a
+
+
+-- 7 Billion Humans (2059) --
+-- 9: Dynamic Angles --
+-- 8c / 5s --
+
+pickup s
+step s
+step s
+a:
+if nw == datacube:
+	drop
+	jump b
+endif
+step s
+jump a
+b:
+
+
