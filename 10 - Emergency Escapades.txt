@@ -1,0 +1,85 @@
+-- best known solutions 20180826 --
+-- size 7 / speed 13
+-- optional challenges
+-- size 9 / speed 25
+
+-- 7 Billion Humans (2059) --
+-- 10: Emergency Escapades --
+-- 13c / 198s --
+
+a:
+if c != datacube:
+	step w
+	jump a
+else:
+	b:
+	if c == 1:
+		step n
+	endif
+	if c == 2:
+		step e
+	endif
+	if c == 3:
+		step s
+	endif
+	if c == 4:
+		step w
+	endif
+endif
+jump b
+
+
+-- 7 Billion Humans (2059) --
+-- 10: Emergency Escapades --
+-- 9c / 203s --
+
+a:
+if c == 4 or
+ c == nothing:
+	step w
+endif
+if c == 1:
+	step n
+endif
+if c == 2:
+	step e
+endif
+if c == 3:
+	step s
+endif
+jump a
+
+
+-- 7 Billion Humans (2059) --
+-- 10: Emergency Escapades --
+-- 18c / 106s --
+
+step w
+step w
+step w
+a:
+if c == 1:
+	step n
+else:
+	b:
+	if c == 2:
+		step e
+		jump b
+	else:
+		c:
+		if c == 3:
+			step s
+			jump c
+		else:
+			d:
+			if c == 4 or
+			 c == nothing:
+				step w
+				jump d
+			endif
+		endif
+	endif
+endif
+jump a
+
+
