@@ -1,6 +1,6 @@
 -- 7 Billion Humans (2059) --
 -- 7: Collation Station --
--- 5c / 11s --
+-- 8c / 11s --
 
 a:
 if s == datacube:
@@ -33,6 +33,57 @@ else:
 endif
 jump a
 b:
+
+
+-- 7 Billion Humans (2059) --
+-- 7: Collation Station --
+-- 7c / 10s --
+
+a:
+if c == datacube:
+	pickup c
+endif
+if s == hole:
+	drop
+	jump b
+endif
+step s
+jump a
+b:
+
+
+-- 7 Billion Humans (2059) --
+-- 7: Collation Station --
+-- 4c / 20s --
+
+a:
+drop
+step s
+pickup n
+jump a
+
+
+-- 7 Billion Humans (2059) --
+-- 7: Collation Station --
+-- 10c / 6s --
+
+a:
+step s
+if c == datacube:
+	pickup c
+	b:
+	step s
+	if s == hole:
+		drop
+		jump c
+	else:
+		jump b
+	endif
+endif
+jump a
+c:
+
+
 
 
 
