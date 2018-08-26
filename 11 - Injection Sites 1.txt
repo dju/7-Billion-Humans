@@ -16,3 +16,39 @@ endif
 b:
 
 
+-- 7 Billion Humans (2059) --
+-- 11: Injection Sites 1 --
+-- 12c / 6s --
+
+pickup s
+step s
+step s
+step s
+step s
+a:
+if c == nothing:
+	drop
+	jump b
+else:
+	step s
+	step s
+	jump a
+endif
+b:
+
+
+-- 7 Billion Humans (2059) --
+-- 11: Injection Sites 1 --
+-- 5c / 23s --
+
+a:
+pickup s
+step s
+if c == nothing and
+ w == datacube and
+ e == datacube:
+	drop
+endif
+jump a
+
+
