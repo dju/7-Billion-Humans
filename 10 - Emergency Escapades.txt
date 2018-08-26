@@ -140,5 +140,50 @@ endif
 jump a
 
 
+-- 7 Billion Humans (2059) --
+-- 10: Emergency Escapades --
+-- 28c / 20s --
+
+step w
+step w
+step w
+if n == hole and
+ c != datacube:
+	step sw
+endif
+if s == wall:
+	step nw
+endif
+a:
+if c != datacube and
+ w != hole:
+	step w
+	jump a
+endif
+b:
+if c == 1 and
+ w != hole:
+	step w
+else:
+	step nw
+endif
+if c == nothing and
+ sw == 3:
+	step sw
+	step s
+	step sw
+	step w
+	step w
+	step w
+	step nw
+	step n
+	step n
+	step n
+	step nw
+	step n
+endif
+jump b
+
+
 
 
