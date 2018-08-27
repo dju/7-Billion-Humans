@@ -1,0 +1,32 @@
+-- best known solutions 20180826 --
+-- size 4 / speed 2
+-- optional challenges
+-- size 4 / speed 4
+
+
+-- 7 Billion Humans (2059) --
+-- 14: Intro to Shredding --
+-- 4c / 4s --
+
+pickup s
+step s
+step s
+giveto s
+
+
+-- 7 Billion Humans (2059) --
+-- 14: Intro to Shredding --
+-- 7c / 2s --
+
+if s == datacube:
+	pickup s
+else:
+	jump a
+endif
+step s
+step s
+giveto s
+a:
+
+
+
