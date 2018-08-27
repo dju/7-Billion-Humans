@@ -1,0 +1,111 @@
+-- 7 Billion Humans (2059) --
+-- 26: Budget Brigade 2 --
+-- Nixxx 28/10  69/70 --
+
+comment 0
+comment 1
+comment 2
+if s == printer:
+	a:
+	takefrom s
+	giveto n
+	jump a
+endif
+comment 3
+if s == shredder:
+	b:
+	c:
+	if myitem == datacube:
+		giveto s
+		jump c
+	endif
+	jump b
+endif
+comment 4
+if e == hole and
+ w == hole:
+	d:
+	if myitem == datacube:
+		giveto n
+	endif
+	jump d
+endif
+comment 5
+if e == worker and
+ w == worker and
+ s == worker:
+	e:
+	if myitem == datacube:
+		if myitem >= 50:
+			giveto e
+		else:
+			giveto w
+		endif
+	endif
+	jump e
+endif
+comment 6
+f:
+g:
+if myitem >= 50:
+	giveto e
+	takefrom w
+	jump f
+endif
+if myitem < 50:
+	giveto w
+	takefrom e
+endif
+jump g
+
+
+DEFINE COMMENT 0
+eJztkDtLwmEUxn9fwaklN4eyIYhoaIiQWhsaSiLMxMWIKKEL0nBw0pCIyJKm5sagEHEQughBVEMNUX9p
+auj2FXo89SUCDzy85zznOe+5TAMWJWZ9zAhZ+SV62abNh4lbNwm6WLYQuTZHjBTjpJlgwzXD0vdzZBGq
+0l44l2KUedXOkfd4hSFbFdZJssamc2nlF4grTnicIWfZ3x6WV67MpPu7RCgzxgGLwhb7HLNH3YrUrEDV
+ZyrqzxLm+hPVnVJxvkGPnTPo/CNRexXeGbAPRvjSHt/s2Cdnihu8/c3eZFZYsiv1uqRiNxxaS2+gzoHu
+Eij3ov0Dkvasmz1ph3vhlimvv1b+Tvd60GYd69g/sB/SLl4a;
+
+DEFINE COMMENT 1
+eJztkD9LAlAUxX8fwLU/BFGEVEP0xyJCGqShocktEBuUEgsSsYaIggOBQ2GEoPgnJCwkwaRBoiGkNRCK
+iL5BQ/Qluj76Di1euHDPee+c8+6LABrDqxH86iOMhyRdbpoA8wTxs9nFDJPSFEnNcKQ5zuWjYfOTcW13
+PoHsTlUDNJw+yCQRZkmz4PCO+cdZY4u0Ijw4boOYtomzb757HGiXK+e1zj1RmkrQ4ti6e/eCQeUZVxGf
+w7f065pR5Vh0mgwBZVmhzrLDl3itV1WyjAIpx+UsP0uIMxI64cD5lAmpSlQ3xBw+pWBZJe7IO03J9i1S
+MO2jMrw5rkiTiu1Qp2Mv/VSLd8eXGbI8j5s7LKlDWC8c6tl2af/t8WrZH/aXX1T0TU0/1OhVr/6xfgFW
+2mC+;
+
+DEFINE COMMENT 2
+eJztjT8LQQEUxX+fQSYDhpfJYFQmg91gNvqXhzwW0x2U1WL0TWSS9HpJkiTJIBnkMzjvrb7CO3W6t9vv
+nFsCLElWLpBgYglWhLcM63BSJmUV0lYnZ20cpuSY4dhcXii3JBtxLnl6FOWqudQ0W/Ih6nI5WYcjXQKG
+bM1jx4jARrp7XKzP3bqRz+rZK+czYCtmI+ageVPuKe6tjo81+VqDDw2uNJUJeQ9fbMCYi/iH9Xjr70ud
+R+2+DfQzVqxYf/oBxDVGpg;
+
+DEFINE COMMENT 3
+eJztkE1OAkEQRt8RXBCCE0OUICEjQSQ4MYSVa7ZGbyEq8rP74hlYG6IsPIFh6c+oIBzBw/j1eAoTKnnp
+6epXVd1zBmibE0Uk7NFS1RxySpOuGlxT4077TLTDkw7METOOTag7Z56tQ6qaEGtKXTNXPFPTC2VSE2JI
+zMBOn13dEnlfYExRYyqM7N942qVrepTok3cun52HswEtnydc2en9eabs78j5nPvlXFPM5nx4TkpFKQV9
+saWlWbnX2rkFiXOJnY6dDu/ev/m+qe+0sL9yjzUlr3WW/gcpbTttXmmY2G7wIn17bnjzlKa50AMjPXJv
+5n77p/lhE5v4R/ELKBpTlg;
+
+DEFINE COMMENT 4
+eJztkD1LgmEUhq8/0RIRDmIUJtJgYg0R4tTQ1BDR0CDUFCESDXEGwc/e8utFrZYQcXCIpoaQcGiKkKYG
+6ReEiDQ1dUu/oc0DF+c8H+e+z/McAjbDii0QtGWiFmCXRY7wkrA5zsxD0vwkCZOyCAXWcW2NO1vlniVe
+8NBnEtG/bHFmLcO8dURPp5O4kJpDwBw2xaMVeCPLJxVRZmAl3pWflNvKTSvSo0RT9bnutHA1g8uW8glV
+zMoktO/X+Q5FjrniQITV55VGUr0Nq+usrnlduqJkNfbFqfpepTEQP9IZa/2ge9vUiAi/VQhJK2SXqh1R
+wCdC5ImRI245htr/ks/QsowsLxy+1Te2KiN59eXdsWsckbKG/rHBHjdsiBC3BIVftU++Mb3BlVdbHs/S
+61uarv6vRUZzpvnQesA0pvGP8Quu9YIr;
+
+DEFINE COMMENT 5
+eJztj79KwlEcxT8PIb9B4keEkUSEOJiEWET8BgcRjIamZienRjlzRJrpL6V/6tJSS0NTow/Q1NRD9Aie
+62vogQPnfu/5nnNvAqhKjQPOtUdLO3S0zTV5s85MDWYEnHLJCTc64pMqv+Z/GKtpfcbfUrco6Iqibs0+
+Bd58/rD+Mr+t5+wus1IOGVDWvedD8nok5pVYU0pMqfDsphGJfYkGbg5ZfTacGdmfUUrk+8i+Tb0498k7
+qX13HKtLxf0lc4se2bBjb8a+WBNy5r67igz9g/DmETU9cGG2NeadMXP7f1hjjRXBAqquRwk;
+
+DEFINE COMMENT 6
+eJztkM1KQlEUhb+naCAhdrtYhKjIRSTEolnQEzSMRjUI+yMralNBQVKIKBSkI6MfKGhQDSODigpnPUbP
+0Do3H6GhCz72OfvsvVlnzyP5JETWPKYsxjT9zDLEnKVYtoA9UbYMdVI0LM45A8JpkJxlydsYo+5qkzTC
+fImomSae4tsJaaokraJ4KPYJbFfskGGTjK0r53pbxDQ1oEVeMW+X8vMo2qp5Fk8kRMwe8Oxes+80+5a4
+Xens+htkaTIhBzNiy5rUlbsQ35zxE/paU/2qWGFYBBxQsGMKYf+N4of+/8a4SPLOiKJvr3i8iLb8OS3Q
+Z0tE2CZiJeUWiQqfonZYlIeSPG+QoyyOtJdKdzdV0iIIzzXVOdX0V6dr+Xb5Tvf9828nfGl2R7vsEFcM
+ffbU03/rFy2AYM8;
+
