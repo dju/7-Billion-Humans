@@ -1,0 +1,97 @@
+-- best known solutions 20180826 https://tomorrowcorporation.com/7billionhumansStats/ --
+-- size 9 / speed 4
+-- optional challenges
+-- size 9 / speed 11
+
+
+-- 7 Billion Humans (2059) --
+-- 20: Reverse Line --
+-- 77c / 11s --
+
+pickup s
+if w != worker:
+	step se
+	step e
+	step e
+	step e
+	step e
+	step e
+	step e
+	drop
+	end
+else:
+	step n
+	step s
+endif
+if w != worker:
+	step se
+	step e
+	step e
+	step e
+	step e
+	drop
+	end
+else:
+	step n
+	step s
+endif
+if w != worker:
+	step se
+	step e
+	step e
+	drop
+	end
+else:
+	step n
+	step s
+endif
+if w != worker:
+	step se
+	drop
+	end
+else:
+	step n
+	step s
+endif
+if w != worker:
+	step sw
+	drop
+	end
+else:
+	step n
+	step s
+endif
+if w != worker:
+	step w
+	step w
+	step sw
+	drop
+	end
+else:
+	step n
+	step s
+endif
+if w != worker:
+	step w
+	step w
+	step w
+	step w
+	step sw
+	drop
+	end
+else:
+	step n
+	step s
+endif
+if w != worker:
+	step w
+	step w
+	step w
+	step w
+	step w
+	step w
+	step sw
+	drop
+endif
+
+
