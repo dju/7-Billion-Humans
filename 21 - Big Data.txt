@@ -24,3 +24,20 @@ step se
 end
 
 
+-- 7 Billion Humans (2059) --
+-- 21: Big Data --
+-- 8c / 25s --
+
+a:
+step s
+takefrom s
+if myitem == something and
+ myitem >= 50:
+	end
+endif
+step w
+giveto s
+step e
+jump a
+
+
