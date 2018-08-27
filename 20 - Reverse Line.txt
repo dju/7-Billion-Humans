@@ -94,4 +94,48 @@ if w != worker:
 	drop
 endif
 
+-- 7 Billion Humans (2059) --
+-- 20: Reverse Line --
+-- 9c / 13s --
+
+pickup s
+step s
+a:
+if w >= worker:
+	step w
+	jump a
+endif
+b:
+if e != hole and
+ e != datacube:
+	step e
+	jump b
+endif
+drop
+
+
+-- 7 Billion Humans (2059) --
+-- 20: Reverse Line --
+-- 9c / 11s --
+
+pickup s
+a:
+if e >= worker:
+	step e
+	jump a
+endif
+step s
+b:
+if w != hole and
+ w != datacube:
+	step w
+	jump b
+endif
+drop
+
+
+
+
+
+
 
