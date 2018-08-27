@@ -1,0 +1,26 @@
+-- best known solutions 20180826 https://tomorrowcorporation.com/7billionhumansStats/ --
+-- size 6 / speed 21
+-- optional challenges
+-- size 8 / speed 32
+
+
+-- 7 Billion Humans (2059) --
+-- 21: Big Data --
+-- 11c / 25s --
+
+a:
+step s
+takefrom s
+if myitem >= 50:
+	jump b
+else:
+	step w
+	giveto s
+	step e
+endif
+jump a
+b:
+step se
+end
+
+
