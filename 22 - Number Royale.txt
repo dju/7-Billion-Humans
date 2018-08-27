@@ -65,3 +65,19 @@ endif
 jump a
 
 
+-- 7 Billion Humans (2059) --
+-- 22: Number Royale --
+-- 6c / 9s --
+
+pickup s
+a:
+if myitem < w or
+ myitem < e:
+	b:
+	step s
+	jump b
+endif
+step w
+jump a
+
+
