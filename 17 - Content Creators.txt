@@ -1,0 +1,13 @@
+-- best known solutions 20180826 https://tomorrowcorporation.com/7billionhumansStats/ --
+-- size 1 / speed 2
+-- optional challenges
+-- size 1 / speed 3
+
+
+-- 7 Billion Humans (2059) --
+-- 17: Content Creators --
+-- 1c / 2s --
+
+pickup s
+
+
