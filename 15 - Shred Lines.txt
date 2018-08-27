@@ -76,3 +76,23 @@ else:
 endif
 
 
+-- 7 Billion Humans (2059) --
+-- 15: Shred Lines --
+-- 9c / 32s --
+
+a:
+b:
+if c != datacube:
+	step n
+	jump b
+endif
+pickup c
+c:
+if s != shredder:
+	step s
+	jump c
+endif
+giveto s
+jump a
+
+
