@@ -53,6 +53,32 @@ b:
 giveto s
 
 
+-- 7 Billion Humans (2059) --
+-- 18: Uniquely Disposed --
+-- 6c / 12s --
+
+pickup w
+step sw
+a:
+if s != shredder:
+	step se
+	jump a
+endif
+giveto s
+
+
+-- 7 Billion Humans (2059) --
+-- 18: Uniquely Disposed --
+-- 5c / 23s --
+
+pickup w
+step sw
+a:
+step se
+giveto s
+jump a
+
+
 
 
 
