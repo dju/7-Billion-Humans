@@ -1,0 +1,58 @@
+-- best known solutions 20180826 https://tomorrowcorporation.com/7billionhumansStats/ --
+-- size 5 / speed 7
+-- optional challenges
+-- size 7 / speed 12
+
+
+-- 7 Billion Humans (2059) --
+-- 18: Uniquely Disposed --
+-- 17c / 16s --
+
+pickup w
+if s != worker and
+ sw != worker:
+	step sw
+else:
+	a:
+	if s != worker and
+	 se != wall:
+		step s
+		if s == shredder:
+			jump b
+		endif
+	else:
+		step se
+		if e == wall:
+			step s
+			step s
+			jump c
+		endif
+	endif
+	jump a
+	b:
+	c:
+endif
+giveto s
+end
+
+
+-- 7 Billion Humans (2059) --
+-- 18: Uniquely Disposed --
+-- 8c / 12s --
+
+pickup w
+step sw
+a:
+if s == shredder:
+	jump b
+else:
+	step se
+	jump a
+endif
+b:
+giveto s
+
+
+
+
+
