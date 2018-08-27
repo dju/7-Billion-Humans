@@ -1,0 +1,19 @@
+-- best known solutions 20180826 https://tomorrowcorporation.com/7billionhumansStats/ --
+-- size 6 / speed 16
+-- optional challenges
+-- size 6 / speed 26
+
+
+-- 7 Billion Humans (2059) --
+-- 23: Sorting Hall --
+-- size 6 / speed 24
+
+pickup s
+a:
+if myitem < w:
+	step w
+endif
+if myitem > e:
+	step e
+endif
+jump a
