@@ -1,0 +1,78 @@
+-- best known solutions 20180826 --
+-- size 8 / speed 12
+-- optional challenges
+-- size 9 / speed 23
+
+
+-- 7 Billion Humans (2059) --
+-- 15: Shred Lines --
+-- 11c / 26s --
+
+a:
+b:
+if n == nothing:
+	step n
+	jump b
+else:
+	pickup n
+endif
+c:
+if s != shredder:
+	step s
+	jump c
+else:
+	giveto s
+endif
+jump a
+
+
+-- 7 Billion Humans (2059) --
+-- 15: Shred Lines --
+-- 38c / 19s --
+
+step n
+if n == datacube:
+	pickup n
+	step s
+	giveto s
+else:
+	step n
+	pickup n
+	step s
+	step s
+	giveto s
+endif
+step n
+step n
+step n
+if n == datacube:
+	pickup n
+	step s
+	step s
+	step s
+	giveto s
+else:
+	step n
+	pickup n
+	step s
+	step s
+	step s
+	step s
+	giveto s
+endif
+a:
+if n == nothing:
+	step n
+	jump a
+else:
+	pickup n
+endif
+b:
+if s != shredder:
+	step s
+	jump b
+else:
+	giveto s
+endif
+
+
