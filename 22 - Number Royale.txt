@@ -1,0 +1,29 @@
+-- best known solutions 20180826 https://tomorrowcorporation.com/7billionhumansStats/ --
+-- size 5 / speed 7
+-- optional challenges
+-- size 6 / speed 11
+
+
+-- 7 Billion Humans (2059) --
+-- 22: Number Royale --
+-- 9c / 13s --
+
+pickup s
+a:
+if myitem < w or
+ myitem < e:
+	b:
+	if c == nothing:
+		step s
+		jump b
+	endif
+endif
+c:
+if w != worker and
+ w != wall:
+	step w
+	jump c
+endif
+jump a
+
+
