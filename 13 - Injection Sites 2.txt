@@ -33,3 +33,24 @@ if c == nothing:
 endif
 
 
+-- 7 Billion Humans (2059) --
+-- 13: Injection Sites 2 --
+-- 8c / 55s --
+
+pickup s
+a:
+if e == worker and
+ s == datacube or
+ w == worker:
+	step se
+else:
+	step s
+endif
+if w == datacube and
+ c == nothing:
+	drop
+endif
+jump a
+
+
+
