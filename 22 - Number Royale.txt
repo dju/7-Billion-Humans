@@ -27,3 +27,24 @@ endif
 jump a
 
 
+-- 7 Billion Humans (2059) --
+-- 22: Number Royale --
+-- 9c / 10s --
+
+pickup s
+step s
+step s
+a:
+if myitem < w or
+ myitem < e:
+	step s
+endif
+b:
+if w != worker and
+ w != wall:
+	step w
+	jump b
+endif
+jump a
+
+
