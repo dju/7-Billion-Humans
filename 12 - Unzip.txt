@@ -86,4 +86,22 @@ else:
 endif
 drop
 
+-- 7 Billion Humans (2059) --
+-- 12: Unzip --
+-- Nixxx ：8/7 --
+
+pickup c
+a:
+if w == wall or
+ w == nothing:
+	step n
+	drop
+endif
+if w == nothing:
+	step s
+	drop
+endif
+jump a
+
+
 
