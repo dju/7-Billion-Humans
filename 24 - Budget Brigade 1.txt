@@ -1,0 +1,25 @@
+-- best known solutions 20180826 https://tomorrowcorporation.com/7billionhumansStats/ --
+-- size 6 / speed 47
+-- optional challenges
+-- size 7 / speed 50
+
+
+-- 7 Billion Humans (2059) --
+-- 24: Budget Brigade 1 --
+-- size 8 / speed 116 --
+
+a:
+if s == printer:
+	takefrom s
+endif
+if s != shredder:
+	takefrom w
+	giveto e
+endif
+if s == shredder and
+ myitem == something:
+	giveto s
+endif
+jump a
+
+
