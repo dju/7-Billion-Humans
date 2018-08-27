@@ -76,3 +76,22 @@ else:
 endif
 
 
+-- 7 Billion Humans (2059) --
+-- 16: Little Exterminator 2 --
+-- 8c / 24s --
+
+a:
+if s != wall and
+ s != hole:
+	step s
+	pickup c
+	jump a
+endif
+b:
+if e != wall:
+	step e
+	giveto se
+	jump b
+endif
+
+
