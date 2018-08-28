@@ -110,3 +110,26 @@ if s == shredder:
 endif
 
 
+-- 7 Billion Humans (2059) --
+-- 26: Budget Brigade 2 --
+-- size 10 / speed 201 --
+
+a:
+if w == hole and
+ e == hole:
+	takefrom s
+	giveto n
+endif
+if myitem == something and
+ myitem >= 50:
+	giveto e
+else:
+	giveto w
+endif
+if s == shredder and
+ myitem == something:
+	giveto s
+endif
+jump a
+
+
