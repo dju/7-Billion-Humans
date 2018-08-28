@@ -23,3 +23,42 @@ endif
 jump a
 
 
+-- 7 Billion Humans (2059) --
+-- 24: Budget Brigade 1 --
+-- size 6 / speed 120 --
+
+
+a:
+if s == printer:
+	takefrom s
+endif
+giveto e
+if s == shredder and
+ myitem == something:
+	giveto s
+endif
+jump a
+
+
+-- 7 Billion Humans (2059) --
+-- 24: Budget Brigade 1 --
+-- size 9 / speed 80 --
+
+a:
+if s == printer:
+	takefrom s
+	giveto e
+endif
+b:
+if myitem == something and
+ s == hole:
+	giveto e
+	jump b
+endif
+if s == shredder and
+ myitem == something:
+	giveto s
+endif
+jump a
+
+
