@@ -1,0 +1,16 @@
+-- best known solutions 20180826 https://tomorrowcorporation.com/7billionhumansStats/ --
+-- size 4 / speed 51
+-- optional challenges
+-- size 4 / speed 51
+
+
+-- 7 Billion Humans (2059) --
+-- 28: Neural Pathways --
+-- size 4 / speed 51
+
+mem1 = nearest shredder
+mem2 = nearest datacube
+pickup mem2
+giveto mem1
+
+
