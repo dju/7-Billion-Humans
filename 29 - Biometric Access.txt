@@ -1,0 +1,18 @@
+-- best known solutions 20180826 https://tomorrowcorporation.com/7billionhumansStats/ --
+-- size 5 / speed 58
+-- optional challenges
+-- size 5 / speed 61
+
+
+-- 7 Billion Humans (2059) --
+-- 29: Biometric Access --
+-- size 5 / speed 60
+
+mem2 = nearest shredder
+a:
+mem3 = nearest datacube
+pickup mem3
+giveto mem2
+jump a
+
+
