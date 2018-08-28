@@ -62,3 +62,35 @@ endif
 jump a
 
 
+-- 7 Billion Humans (2059) --
+-- 24: Budget Brigade 1 --
+-- size 13 / speed 48 --
+
+
+if s == printer:
+	a:
+	takefrom s
+	giveto e
+	jump a
+endif
+if s == shredder:
+	b:
+	if myitem == something:
+		giveto s
+	endif
+	jump b
+endif
+c:
+if myitem == something:
+	giveto e
+else:
+	takefrom w
+endif
+jump c
+
+
+
+
+
+
+
