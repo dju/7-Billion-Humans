@@ -6,7 +6,7 @@
 
 -- 7 Billion Humans (2059) --
 -- 26: Budget Brigade 2 --
--- size 26 / speed 70 --
+-- size 26 / speed 75 --
 
 if s == printer:
 	a:
@@ -20,6 +20,60 @@ if w == hole and
 	b:
 	takefrom s
 	giveto n
+	jump b
+endif
+if w == worker and
+ e == worker and
+ s == worker:
+	c:
+	if myitem == something:
+		if myitem >= 50:
+			giveto e
+		else:
+			giveto w
+		endif
+	endif
+	jump c
+endif
+if n == hole and
+ s == hole:
+	d:
+	if myitem == something:
+		if myitem >= 50:
+			giveto e
+		else:
+			giveto w
+		endif
+	endif
+	jump d
+endif
+if s == shredder:
+	e:
+	if myitem == something:
+		giveto s
+	endif
+	jump e
+endif
+
+
+-- 7 Billion Humans (2059) --
+-- 26: Budget Brigade 2 --
+-- size 27 / speed 69 --
+
+if s == printer:
+	a:
+	if myitem == nothing:
+		takefrom s
+		giveto n
+	endif
+	jump a
+endif
+if w == hole and
+ e == hole:
+	b:
+	if myitem == something:
+		giveto n
+	endif
 	jump b
 endif
 if w == worker and
