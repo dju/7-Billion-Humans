@@ -1,0 +1,58 @@
+-- best known solutions 20180826 https://tomorrowcorporation.com/7billionhumansStats/ --
+-- size 8 / speed 67
+-- optional challenges
+-- size 10 / speed 70
+
+
+-- 7 Billion Humans (2059) --
+-- 26: Budget Brigade 2 --
+-- size 26 / speed 70 --
+
+if s == printer:
+	a:
+	if myitem == nothing:
+		takefrom s
+	endif
+	jump a
+endif
+if w == hole and
+ e == hole:
+	b:
+	takefrom s
+	giveto n
+	jump b
+endif
+if w == worker and
+ e == worker and
+ s == worker:
+	c:
+	if myitem == something:
+		if myitem >= 50:
+			giveto e
+		else:
+			giveto w
+		endif
+	endif
+	jump c
+endif
+if n == hole and
+ s == hole:
+	d:
+	if myitem == something:
+		if myitem >= 50:
+			giveto e
+		else:
+			giveto w
+		endif
+	endif
+	jump d
+endif
+if s == shredder:
+	e:
+	if myitem == something:
+		giveto s
+	endif
+	jump e
+endif
+
+
