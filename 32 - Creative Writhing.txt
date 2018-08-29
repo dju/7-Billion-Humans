@@ -1,0 +1,38 @@
+-- best known solutions 20180829 https://tomorrowcorporation.com/7billionhumansStats/ --
+-- size 5 / speed 31
+-- optional challenges
+-- size 6 / speed 39
+
+
+-- 7 Billion Humans (2059) --
+-- 32: Creative Writhing --
+-- size 21 / speed 73
+
+step s
+pickup c
+a:
+if myitem != 99:
+	write 99
+	drop
+	if s == datacube:
+		step s
+	else:
+		if w == datacube:
+			step w
+		else:
+			if e == datacube:
+				step e
+			else:
+				end
+			endif
+		endif
+	endif
+	pickup c
+	write 99
+	drop
+else:
+	drop
+endif
+jump a
+
+
