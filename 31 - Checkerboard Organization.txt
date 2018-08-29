@@ -72,5 +72,20 @@ endif
 jump b
 
 
+-- 7 Billion Humans (2059) --
+-- 31: Checkerboard Organization --
+-- size 7 / speed 130
+
+mem1 = nearest printer
+a:
+if myitem != datacube:
+	takefrom mem1
+	step w,n,e
+endif
+step nw,sw,ne,se
+drop
+jump a
+
+
 
 
