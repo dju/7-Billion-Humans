@@ -1,0 +1,17 @@
+-- 7 Billion Humans (2059) --
+-- 55: Data Flowers --
+-- Nixxx 8/8 24/25: 
+
+pickup s
+a:
+step n
+if s == datacube:
+	mem1 = foreachdir nw,w,sw,n,s,ne,e,se:
+		mem2 = calc mem2 + mem1
+	endfor
+	write mem2
+	drop
+endif
+jump a
+
+
