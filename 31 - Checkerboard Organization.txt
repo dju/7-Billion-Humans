@@ -55,3 +55,21 @@ endif
 jump a
 
 
+-- 7 Billion Humans (2059) --
+-- 31: Checkerboard Organization --
+-- size 9 / speed 93
+
+mem1 = nearest printer
+a:
+takefrom mem1
+step w,n,e
+b:
+step nw,sw,ne,se
+if c == nothing:
+	drop
+	jump a
+else:
+	jump b
+endif
+
+
