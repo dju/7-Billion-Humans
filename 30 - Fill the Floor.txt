@@ -1,0 +1,20 @@
+-- best known solutions 20180826 https://tomorrowcorporation.com/7billionhumansStats/ --
+-- size 5 / speed 119
+-- optional challenges
+-- size 6 / speed 170
+
+
+-- 7 Billion Humans (2059) --
+-- 30: Fill the Floor --
+-- size 6 / speed 697
+
+mem1 = nearest printer
+a:
+takefrom mem1
+if c == nothing:
+	drop
+endif
+step nw,w,sw,n,s,ne,e,se
+jump a
+
+
