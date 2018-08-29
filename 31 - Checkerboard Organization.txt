@@ -57,7 +57,7 @@ jump a
 
 -- 7 Billion Humans (2059) --
 -- 31: Checkerboard Organization --
--- size 9 / speed 93
+-- size 8 / speed 90
 
 mem1 = nearest printer
 a:
@@ -68,8 +68,9 @@ step nw,sw,ne,se
 if c == nothing:
 	drop
 	jump a
-else:
-	jump b
 endif
+jump b
+
+
 
 
