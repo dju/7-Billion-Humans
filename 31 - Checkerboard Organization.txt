@@ -1,0 +1,57 @@
+-- best known solutions 20180826 https://tomorrowcorporation.com/7billionhumansStats/ --
+-- size 7 / speed 58
+-- optional challenges
+-- size 7 / speed 100
+
+
+-- 7 Billion Humans (2059) --
+-- 31: Checkerboard Organization --
+-- size 26 / speed 147
+
+mem1 = nearest printer
+a:
+if myitem != datacube:
+	mem2 = nearest datacube
+	takefrom mem1
+	step mem2
+endif
+b:
+if ne != datacube and
+ ne != printer and
+ ne != hole and
+ ne != wall:
+	drop
+	step ne
+else:
+	if se != datacube and
+	 se != printer and
+	 se != hole and
+	 se != wall:
+		step se
+		drop
+	else:
+		if sw != datacube and
+		 sw != printer and
+		 sw != hole and
+		 sw != wall:
+			step sw
+			drop
+		else:
+			if nw != datacube and
+			 c != printer and
+			 nw != hole and
+			 nw != wall:
+				step nw
+				drop
+			else:
+				step nw,sw,ne,se
+				step nw,sw,ne,se
+				drop
+				jump b
+			endif
+		endif
+	endif
+endif
+jump a
+
+
