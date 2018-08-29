@@ -30,3 +30,22 @@ drop
 jump a
 
 
+-- 7 Billion Humans (2059) --
+-- 30: Fill the Floor --
+-- size 10 / speed 150
+
+mem1 = nearest printer
+a:
+mem2 = nearest wall
+takefrom mem1
+step mem2
+b:
+if c != datacube:
+	drop
+else:
+	step nw,w,sw,n,s,ne,e,se
+	jump b
+endif
+jump a
+
+
