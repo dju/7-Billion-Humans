@@ -1,0 +1,58 @@
+-- 7 Billion Humans (2059) --
+-- 67: Decimal Doubler --
+-- Nixxx: 37/25  190/250 --
+
+if n == nothing and
+ s == nothing and
+ w == datacube:
+	mem4 = set 1
+endif
+if n == nothing and
+ e == nothing and
+ s == datacube:
+	mem4 = set 2
+endif
+step s
+pickup c
+step s
+drop
+step n
+if mem4 != 1:
+	step s
+	pickup c
+	mem1 = set myitem
+	drop
+	a:
+	listenfor ok
+	mem1 = calc mem1 x 2
+	if mem4 == 0 and
+	 e >= 5:
+		mem1 = calc mem1 + 1
+	endif
+	if mem1 == 19:
+		mem1 = set 9
+	endif
+	if mem1 >= 10:
+		mem1 = calc mem1 - 10
+	endif
+	pickup c
+	write mem1
+	drop
+	if mem4 == 2:
+		tell everyone ready
+	endif
+	jump a
+endif
+if mem4 == 1:
+	step s
+	b:
+	step n
+	tell everyone ok
+	listenfor ready
+	step e
+	step s
+	step w
+	jump b
+endif
+
+
