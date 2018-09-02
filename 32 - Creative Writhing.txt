@@ -36,3 +36,48 @@ endif
 jump a
 
 
+-- 7 Billion Humans (2087) --
+-- 32: Creative Writhing --
+-- size 18 / speed 53
+
+
+step s
+a:
+pickup c
+if myitem == 99:
+	drop
+	if s == datacube:
+		step s
+	else:
+		if w == datacube:
+			step w
+		else:
+			if e == datacube:
+				step e
+			else:
+				end
+			endif
+		endif
+	endif
+else:
+	write 99
+	drop
+endif
+jump a
+
+
+-- 7 Billion Humans (2087) --
+-- 32: Creative Writhing --
+-- size 5 / speed 997
+
+a:
+step nw,w,sw,n,s,ne,e,se
+pickup c
+write 99
+drop
+jump a
+
+
+
+
+
