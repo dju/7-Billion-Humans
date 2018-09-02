@@ -109,6 +109,37 @@ drop
 jump a
 
 
+-- 7 Billion Humans (2087) --
+-- 32: Creative Writhing --
+-- size 18 / speed 46
+
+a:
+step s
+if c == datacube and
+ c != 99:
+	pickup c
+	write 99
+	drop
+endif
+if w == datacube and
+ w != 99:
+	pickup w
+	step w
+	write 99
+	drop
+	step e
+endif
+if e == datacube and
+ e != 99:
+	pickup e
+	step e
+	write 99
+	drop
+	step w
+endif
+jump a
+
+
 
 
 
