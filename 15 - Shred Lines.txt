@@ -1,4 +1,4 @@
--- best known solutions 20180826 --
+-- best known solutions 20180826 https://tomorrowcorporation.com/7billionhumansStats/ --
 -- size 8 / speed 12
 -- optional challenges
 -- size 9 / speed 23
